@@ -1,7 +1,9 @@
 package com.authapp.projectonauth.services;
 
 import com.authapp.projectonauth.dtos.UserDto;
-import com.authapp.projectonauth.entities.User;
+
+import java.util.List;
+
 public interface UserService {
     UserDto createUser(UserDto userDto);
     UserDto getUserByEmail(String email);
@@ -9,7 +11,7 @@ public interface UserService {
     void deleteUser(String userId);
     UserDto getUserById(String userId);
     //get all users
-    Iterable<UserDto> getAllUsers();
+    List<UserDto> getAllUsers();
 
 
 }
